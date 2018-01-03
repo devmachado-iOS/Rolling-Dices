@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Roll_the_Dice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="8V2-P1-RM0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="b2V-tD-RX0">
+                                <rect key="frame" x="97" y="92" width="180" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="b2V-tD-RX0" secondAttribute="height" multiplier="15:8" id="NTg-ba-4Fb"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fho-tB-W0I">
+                                <rect key="frame" x="125" y="533" width="124" height="49"/>
+                                <color key="backgroundColor" red="0.70370200382271397" green="0.2437087113669614" blue="0.20929661717412534" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Fho-tB-W0I" secondAttribute="height" multiplier="124:49" id="N7Z-wc-JNn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <state key="normal" title="Roll">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="jogarDados:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C4B-PW-Djk"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="Jfm-3U-OAr">
+                                <rect key="frame" x="52" y="245" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Jfm-3U-OAr" secondAttribute="height" multiplier="1:1" id="Dvv-V2-QQ9"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="r6f-8Y-0MH">
+                                <rect key="frame" x="223" y="245" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="r6f-8Y-0MH" secondAttribute="height" multiplier="1:1" id="rET-vf-BOg"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8V2-P1-RM0" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="93i-3I-MNd"/>
+                            <constraint firstItem="8V2-P1-RM0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9BU-Zq-0ah"/>
+                            <constraint firstItem="Jfm-3U-OAr" firstAttribute="top" secondItem="b2V-tD-RX0" secondAttribute="bottom" constant="57" id="AFZ-uh-gQF"/>
+                            <constraint firstItem="Jfm-3U-OAr" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="100:667" id="B32-tU-TjJ"/>
+                            <constraint firstItem="r6f-8Y-0MH" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="100:667" id="GVB-el-qjt"/>
+                            <constraint firstItem="Fho-tB-W0I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IM7-eI-BY8"/>
+                            <constraint firstItem="8V2-P1-RM0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LCS-SM-Swk"/>
+                            <constraint firstItem="r6f-8Y-0MH" firstAttribute="leading" secondItem="b2V-tD-RX0" secondAttribute="trailing" constant="-54" id="OCV-0h-7Oc"/>
+                            <constraint firstItem="b2V-tD-RX0" firstAttribute="leading" secondItem="Jfm-3U-OAr" secondAttribute="trailing" constant="-55" id="Skg-EQ-lj4"/>
+                            <constraint firstItem="Fho-tB-W0I" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="124:667" id="TCX-tx-nee"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r6f-8Y-0MH" secondAttribute="trailing" constant="52" id="YXY-Pk-eQj"/>
+                            <constraint firstItem="b2V-tD-RX0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="72" id="fUR-tv-ZRx"/>
+                            <constraint firstItem="b2V-tD-RX0" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="180:667" id="oBy-CJ-eTY"/>
+                            <constraint firstItem="Jfm-3U-OAr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52" id="otM-tu-SaX"/>
+                            <constraint firstItem="b2V-tD-RX0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rmM-me-YNb"/>
+                            <constraint firstItem="8V2-P1-RM0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rxG-th-hLN"/>
+                            <constraint firstItem="r6f-8Y-0MH" firstAttribute="top" secondItem="b2V-tD-RX0" secondAttribute="bottom" constant="57" id="thL-eV-Sg5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Fho-tB-W0I" secondAttribute="bottom" constant="85" id="zem-Lf-Rum"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="dadoImgView1" destination="Jfm-3U-OAr" id="ekY-zI-Tcz"/>
+                        <outlet property="dadoImgView2" destination="r6f-8Y-0MH" id="hwB-zu-PCI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47" y="125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="150" height="150"/>
+        <image name="diceeLogo" width="147" height="96"/>
+        <image name="newbackground" width="333" height="311"/>
+    </resources>
+</document>
