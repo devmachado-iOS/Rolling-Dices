@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateDices()
     
     }
 
@@ -30,6 +31,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func jogarDados(_ sender: Any) {
+        
+        updateDices()
+        
+    }
+    
+    func updateDices(){
         
         diceNumberOne = Int(arc4random_uniform(6))
         diceNumberTwo = Int(arc4random_uniform(6))
@@ -41,6 +48,10 @@ class ViewController: UIViewController {
         dadoImgView2.image = UIImage(named:diceArray[diceNumberTwo])
         
         
+    }
+    
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        updateDices()
     }
     
     
